@@ -9,7 +9,7 @@ const HatModel = dynamic(() => import('@/components/models/Hat'), {
   ssr: false,
 });
 
-export default function Home() {
+export default function AboutPage() {
   return (
     <>
       <Image
