@@ -3,8 +3,8 @@ import ItemLayout from './ItemLayout';
 
 const AboutDetails = () => {
 	return (
-		<section className='w-full pt-[516px] relative z-10'>
-			<div className='mb-20'>
+		<section className='w-auto xs:w-full pt-[348px] sm:pt-[400px] lg:pt-[396px] relative z-10'>
+			<div className='mb-20 w-full'>
 				<h1 className='font-bold text-6xl xs:text-7xl sm:text-8xl lg:text-9xl text-accent text-center'>
 					Ismael
 				</h1>
@@ -72,7 +72,7 @@ const AboutDetails = () => {
 						className='w-auto h-auto'
 					/>
 				</ItemLayout>
-				<ItemLayout className={'col-span-6 !p-0'}>
+				<ItemLayout className={'col-span-full md:col-span-6 !p-0'}>
 					<img
 						src={`https://github-readme-stats.vercel.app/api/pin/?username=Ismaelp96&repo=imdb-next&theme=transparent&hide_border=true&title_color=FEFE5B&text_color=FFFFFF&icon_color=FEFE5B&text_bold=false&locale=pt-BR`}
 						alt='Ismaelp96 Git Stats language'
