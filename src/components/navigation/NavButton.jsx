@@ -3,14 +3,15 @@ import {
 	Home,
 	Instagram,
 	Linkedin,
-	NotebookText,
 	Palette,
 	Phone,
 	User,
 } from 'lucide-react';
 import Link from 'next/link';
-import ResponsiveComponent from '../ResponsiveComponent';
 import clsx from 'clsx';
+import { motion } from 'framer-motion';
+
+import ResponsiveComponent from '../ResponsiveComponent';
 
 const getIcon = (icon) => {
 	switch (icon) {
@@ -26,13 +27,18 @@ const getIcon = (icon) => {
 			return <Linkedin className='w-full h-auto' strokeWidth={1.5} />;
 		case 'instagram':
 			return <Instagram className='w-full h-auto' strokeWidth={1.5} />;
-		case 'resume':
-			return <NotebookText className='w-full h-auto' strokeWidth={1.5} />;
 
 		default:
 			return <Home className='w-full h-auto' strokeWidth={1.5} />;
 	}
 };
+
+const item = {
+	hidden: { scale: 0 },
+	show: { scale: 1 },
+};
+
+const NavLink = motion(Link);
 
 const NavButton = ({
 	x,
@@ -50,7 +56,8 @@ const NavButton = ({
 					<div
 						className='absolute cursor-pointer z-50'
 						style={{ transform: `translate(${x}, ${y})` }}>
-						<Link
+						<NavLink
+							variants={item}
 							className='text-foreground rounded-full flex items-center justify-center custom-bg'
 							href={link}
 							aria-label={label}
@@ -63,11 +70,12 @@ const NavButton = ({
 									{label}
 								</span>
 							</span>
-						</Link>
+						</NavLink>
 					</div>
 				) : (
 					<div className='cursor-pointer z-50'>
-						<Link
+						<NavLink
+							variants={item}
 							className='text-foreground rounded-full flex items-center justify-center custom-bg'
 							href={link}
 							aria-label={label}
@@ -84,7 +92,7 @@ const NavButton = ({
 									{label}
 								</span>
 							</span>
-						</Link>
+						</NavLink>
 					</div>
 				);
 			}}
