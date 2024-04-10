@@ -21,7 +21,7 @@ const ProjectLayout = ({ name, description, date, demoLink }) => {
 			</div>
 			<div className=' self-endflex-1 mx-2 mb-1 bg-transparent border border-b border-dashed border-muted'></div>
 			<p className='text-muted sm:text-foreground'>
-				{new Date(date).toDateString()}
+				{new Date(date).toLocaleDateString('pt-BR')}
 			</p>
 		</NavLink>
 	);

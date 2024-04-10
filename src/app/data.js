@@ -1,91 +1,80 @@
-/*
-Websites:
-
-- https://github.com/pmndrs/gltfjsx (GLTF JSX for 3D Models)
-- https://lucide.dev/icons/ (Lucide Icons)
-- https://github.com/anuraghazra/github-readme-stats (Github Readme Stats)
-- https://skillicons.dev (Skill Icons to show skills)
-- https://github-readme-streak-stats.herokuapp.com (Github Readme Streak Stats)
-
-:root {
-  --background: 27 27 27;
-  --foreground: 225 225 225;
-  --muted: 115 115 115;
-  --accent: 254 254 91; #FEFE5B
-}
-
-*/
-
 export const projectsData = [
 	{
 		id: 1,
-		name: 'EcoTracker',
-		description: 'Track your carbon footprint',
-		date: '2022-08-15',
-		demoLink: 'https://ecotracker.example.com',
+		name: 'What if',
+		description: 'Demonstração dos personagens marvel em nextJs',
+		date: '10-10-2023',
+		demoLink: 'https://devjamas-whatif.vercel.app/',
 	},
 	{
 		id: 2,
-		name: 'ArtGallery Online',
-		description: 'Digital art showcase platform',
-		date: '2022-06-20',
-		demoLink: 'https://artgalleryonline.example.com',
+		name: 'NFTBoost',
+		description: 'Site de NFT com alguns exemplares em NextJs e Tailwind',
+		date: '12-23-2023',
+		demoLink: 'https://nft-boost-ruddy.vercel.app/',
 	},
 	{
 		id: 3,
-		name: 'BudgetPlanner',
-		description: 'Plan and track expenses',
-		date: '2022-09-10',
-		demoLink: 'https://budgetplanner.example.com',
+		name: 'IMDb',
+		description: 'Clone do site IMDb - Filmes',
+		date: '02-02-2024',
+		demoLink: 'https://imdb-next-mu.vercel.app/',
 	},
 	{
 		id: 4,
-		name: 'HealthBeat',
-		description: 'Monitor heart rate zones',
-		date: '2022-05-30',
-		demoLink: 'https://healthbeat.example.com',
+		name: 'Fokus',
+		description: 'Timer para foco',
+		date: '09-10-2023',
+		demoLink: 'https://fokus-by-ismael.netlify.app/',
 	},
 	{
 		id: 5,
-		name: 'RecipeFinder',
-		description: 'Discover new recipes',
-		date: '2022-07-12',
-		demoLink: 'https://recipefinder.example.com',
+		name: 'Pokemon',
+		description: 'Pokedex',
+		date: '09-10-2023',
+		demoLink: 'https://pokemon-by-ismael.netlify.app/',
 	},
 	{
 		id: 6,
-		name: 'JourneyLogger',
-		description: 'Log your travels',
-		date: '2022-10-01',
-		demoLink: 'https://journeylogger.example.com',
+		name: 'MoniBank',
+		description: 'Exemplo de serviço para abrir conta',
+		date: '10-20-2023',
+		demoLink: 'https://monibank-ismael.netlify.app/',
 	},
 	{
 		id: 7,
-		name: 'StudyBuddy',
-		description: 'Collaborative learning platform',
-		date: '2022-04-18',
-		demoLink: 'https://studybuddy.example.com',
+		name: 'Dev&Dragons',
+		description: 'Duelo de cartas',
+		date: '10-01-2023',
+		demoLink: 'https://ded-devs-ismael.netlify.app/',
 	},
 	{
 		id: 8,
-		name: 'TechTalk',
-		description: 'Tech news aggregator',
-		date: '2022-11-05',
-		demoLink: 'https://techtalk.example.com',
+		name: 'Blizzard',
+		description: 'Demo de um possível site da blizzard',
+		date: '11-30-2022',
+		demoLink: 'https://project-blizzard-codeboost.netlify.app/',
 	},
 	{
 		id: 9,
-		name: 'FitTrack',
-		description: 'Fitness and workout tracker',
-		date: '2022-03-22',
-		demoLink: 'https://fittrack.example.com',
+		name: 'Dk trainers',
+		description: 'Projeto desenvolvido para Abordo',
+		date: '11-30-2022',
+		demoLink: 'https://projectdktrainers.netlify.app/',
 	},
 	{
 		id: 10,
-		name: 'MindfulMoments',
-		description: 'Meditation and mindfulness app',
-		date: '2022-02-14',
-		demoLink: 'https://mindfulmoments.example.com',
+		name: 'Dunia',
+		description: 'Projeto desenvolvido para Abordo',
+		date: '12-31-2022',
+		demoLink: 'https://stunning-griffin-515115.netlify.app/',
+	},
+	{
+		id: 11,
+		name: 'Flppy Bird',
+		description: 'Jogo Flappy Bird Web',
+		date: '12-6-2022',
+		demoLink: 'https://flappybird-integracao-js.netlify.app/',
 	},
 ];
 
