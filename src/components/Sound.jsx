@@ -38,21 +38,20 @@ const Sound = () => {
 	const [isPlaying, setIsPlaying] = useState(false);
 	const [showModal, setShowModal] = useState(false);
 
-	const handleFirstUserInteraction = () => {
-		const musicConsent = localStorage.getItem('musicConsent');
-		if (musicConsent === 'true' && !isPlaying) {
-			audioRef.current.play();
-			setIsPlaying(true);
-		}
-
-		['click', 'keydown', 'touchstart'].forEach((event) =>
-			document.removeEventListener(event, handleFirstUserInteraction),
-		);
-	};
-
 	useEffect(() => {
 		const consent = localStorage.getItem('musicConsent');
 		const consentTime = localStorage.getItem('consentTime');
+		const handleFirstUserInteraction = () => {
+			const musicConsent = localStorage.getItem('musicConsent');
+			if (musicConsent === 'true' && !isPlaying) {
+				audioRef.current.play();
+				setIsPlaying(true);
+			}
+
+			['click', 'keydown', 'touchstart'].forEach((event) =>
+				document.removeEventListener(event, handleFirstUserInteraction),
+			);
+		};
 
 		if (
 			consent &&
@@ -69,7 +68,7 @@ const Sound = () => {
 		} else {
 			setShowModal(true);
 		}
-	}, []);
+	}, [isPlaying]);
 
 	const toggle = () => {
 		const newState = !isPlaying;
